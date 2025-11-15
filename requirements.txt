@@ -1,0 +1,12 @@
+# Stock Price Alert System Dependencies
+
+# Yahoo Finance API - Free stock price data
+# No API key required, but rate limits may apply
+yfinance>=0.2.40
+
+# Desktop notifications - Cross-platform notification support
+# Works on Windows, macOS, and Linux
+plyer>=2.1.0
+
+# Note: These are the only external dependencies needed.
+# The rest of the project uses Python standard library for maximum simplicity.
