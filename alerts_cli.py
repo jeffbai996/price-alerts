@@ -92,6 +92,11 @@ def add(
     ),
 ) -> None:
     """Create a new alert."""
+    if target_price <= 0:
+        raise typer.BadParameter(
+            "target_price must be a positive value.", param_hint="target_price"
+        )
+
     alert = Alert(
         ticker=ticker,
         target_price=target_price,
@@ -162,6 +167,10 @@ def update(
         return
 
     if target_price is not None:
+        if target_price <= 0:
+            raise typer.BadParameter(
+                "target price must be positive when updating.", param_hint="--price"
+            )
         alert.target_price = target_price
     if alert_type is not None:
         alert.alert_type = alert_type.value
