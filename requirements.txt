@@ -8,5 +8,7 @@ yfinance>=0.2.40
 # Works on Windows, macOS, and Linux
 plyer>=2.1.0
 
+# CLI framework for alert management tooling
+typer>=0.9.0
 # Note: These are the only external dependencies needed.
 # The rest of the project uses Python standard library for maximum simplicity.
