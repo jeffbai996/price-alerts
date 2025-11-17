@@ -9,7 +9,7 @@ from typing import List, Dict, Optional
 
 # Configuration
 ALERTS_FILE = "alerts.json"
-CHECK_INTERVAL_SECONDS = 60  # Poll every minute - easily editable
+CHECK_INTERVAL_SECONDS = 15  # Poll roughly every 15 seconds by default
 
 
 class Alert:
